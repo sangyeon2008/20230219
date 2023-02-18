@@ -1,0 +1,13 @@
+#1205 등수구하기
+n,newscore,p = map(int,input().split())
+score= list(input())
+score.append(newscore)
+score.sort(reverse=True)
+if p==score:
+    for i in range(len(score)):
+        if newscore == score[-1]:
+            print(-1)
+        elif newscore == score[-2]:
+            print(-1)
+        
+        elif newscore[1] == score[i]:
